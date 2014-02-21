@@ -1,0 +1,142 @@
+@media (max-width: 960px) {
+  .content {
+    padding: 5%;
+  }
+
+  p.listSpecial {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 780px) {
+  .teamMemberThird {
+    width: 48.5%;
+    margin-right: 1.5%;
+  }
+
+  .sidebarheader {
+    background-position: center;
+  }
+
+  .sidebar h3 {
+    line-height: 2rem;
+    letter-spacing: 0;
+  }
+
+  img.icon {
+    width: 15%;
+  }
+
+  h1 {
+    height: 10%;
+    background-position: center;
+    background-size: contain;
+  }
+
+  input, label[for="describeProject"] {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    height: 9%;
+  }
+
+  ol li {
+    padding-right: 0;
+  }
+
+  label[for="describeProject"] {
+    font-size: 1.2rem;
+  }
+
+  input[type="submit"] {
+    width: 25%;
+    color: white;
+    background: #00b480;
+    padding-left: 2%;
+    padding-top: 1%;
+    text-align: center;
+  }
+
+  footer .sidebar {
+    padding-left: 2%;
+    padding-right: 0;
+    font-size: 1rem;
+  }
+  footer .sidebar img.hackerYouLogo {
+    width: 40%;
+  }
+}
+@media (max-width: 550px) {
+  .sidebar {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .content {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  .sidebarheader {
+    width: 100%;
+    position: relative;
+  }
+
+  h1 {
+    height: 15%;
+    background: url(../images/logo-journeymade.svg) top center no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .teamMember {
+    width: 100%;
+  }
+
+  .teamMemberThird {
+    width: 100%;
+    margin-right: 0;
+  }
+  .teamMemberThird img {
+    width: 100%;
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+  }
+
+  ul.contactInfo li:first-child {
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+
+  .teamMemberThird ul.contactInfo li:first-child {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .teamMemberThird ul.contactInfo li a, .teamMemberThird ul.contactInfo li a:hover {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0;
+  }
+
+  p.smallerText {
+    font-size: 1rem;
+  }
+
+  footer .content {
+    padding-top: 5%;
+  }
+
+  footer .sidebar img.hackerYouLogo {
+    width: 30%;
+    padding-top: 10%;
+  }
+}

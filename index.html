@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JourneyMade</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>// Get the headers position from the top of the page, plus its own height
+		var startY = 200;
+
+		$(window).scroll(function(){
+		    checkY();
+		});
+
+		function checkY(){
+		    if( $(window).scrollTop() > startY ){
+		        $('.fixedDiv').slideDown();
+		    }else{
+		        $('.fixedDiv').slideUp();
+		    }
+		}
+
+// Do this on load just in case the user starts half way down the page
+checkY();</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="nav">
+				<a href="projectinquiries.html">Project Inquiries</a>
+				<a href="contact.html">Contact</a>
+			</div> <!-- nav -->
+			<div class="topContent">
+				<h2>Get your web project done while creating up-and-coming developer talent.</h2>
+				<p>For centuries, journeypeople have been incredibly important members of the economy. They’re folks who are fully educated in a trade or craft, but not yet masters. After completing an apprenticeship, these journeypeople would travel from town to town, taking on different projects and gaining experience. Eventually, they would be invited to settle and become that town’s master. And the cycle continued.</p>
+			
+				<p>At JourneyMade, we’re taking our own spin on the journeyperson tradition and applying it to web development. Under the guidance of Brenna O’Brien and Christina Truong (our resident masters) and after nine weeks of full-time training at <a href="http://learninglabs.org/events/front-end-bootcamp-spring/" target="blank">HackerYou’s front-end development immersive</a>, our team members are ready and willing to work on your projects. One day they’ll leave us to join another company full-time. And that’s kind of the point.</p>
+			</div> <!-- topContent -->
+			<div class="teamContent">
+				<h2>The Team</h2>
+				<div class="teamMember">
+					<img src="images/team-christina.jpg" alt="Christina Truong">
+					<h3>Christina Truong</h3>
+					<ul class="contactInfo">
+						<li>Resident Master</li>
+						<li><a href="http://christinatruong.com/" target="_blank">christinatruong.com</a></li>
+						<li><a href="https://twitter.com/christinatruong" target="_blank">@christinatruong</a></li>
+					</ul>
+					<p class="smallerText">300 characters dolor sit amet, consectetur adipiscing elit. Donec gravida nec velit id lobortis. Mauris mattis volutpat nisi, non consequat orci. Ut fringilla luctus bibendum. Mauris vesulum id diam vda bendum. Etiam ac venenatis risus. Sed blandit nibh sed quam egestas, eu dapib us tuis ultricies.</p>
+				</div> <!-- teamMember christina-->
+
+				<div class="teamMember">
+					<img src="images/team-brenna.jpg" alt="Brenna O'Brien">
+					<h3>Brenna O'Brien</h3>
+					<ul class="contactInfo">
+						<li>Resident Master</li>
+						<li><a href="http://brennaobrien.com/" target="_blank">brennaobrien.com</a></li>
+						<li><a href="https://twitter.com/brnnbrn" target="_blank">@brnnbrn</a></li>
+					</ul>
+					<p class="smallerText">300 characters dolor sit amet, consectetur adipiscing elit. Donec gravida nec velit id lobortis. Mauris mattis volutpat nisi, non consequat orci. Ut fringilla luctus bibendum. Mauris vesulum id diam vda bendum. Etiam ac venenatis risus. Sed blandit nibh sed quam egestas, eu dapib us tuis ultricies. </p>
+				</div> <!-- teamMember brenna -->
+
+				<div class="teamMember">
+					<img src="images/team-heather.jpg" alt="Heather Payne">
+					<h3>Heather Payne</h3>
+					<ul class="contactInfo">
+						<li>Client Relations</li>
+						<li><a href="http://heatherpayne.com/" target="_blank">heatherpayne.com</a></li>
+						<li><a href="https://twitter.com/brnnbrn" target="_blank">@heatherpayne</a></li>
+					</ul>
+				</div> <!-- teamMember heather -->
+				<div class="teamMember">
+					<img src="images/team-jared.jpg" alt="Jared Phillips">
+					<h3>Jared Phillips</h3>
+					<ul class="contactInfo">
+						<li>Lead, Student Experience</li>
+						<li><a href="http://github.com/jaredphillips" target="_blank">github.com/jaredphillips</a></li>
+						<li><a href="https://twitter.com/lormipsum" target="_blank">@loremipsum</a></li>
+					</ul>
+				</div> <!-- teamMember Jared -->
+				<div class="teamMemberThird">
+					<div class="readBio">
+						<img src="images/team-member.jpg" alt="Jared Phillips">
+						<!-- MODAL -->
+						<a href="#openModal">Read Bio</a>
+							<div id="openModal" class="modalDialog">
+								<div>
+									<a href="#close" title="Close" class="close"><img src="images/icon-close.svg" alt="close window"></a>
+									<img src="images/fpo-modalcover-2x.jpg"alt="modalcover fpo" class="modalImage">
+									<h2>Tony Bitzonis</h2>
+									<h3>A Toronto based web developer with a passion for HTML, CSS, JS, mobile development... and dinosaurs. </h3>
+									<p>
+										Cupcake ipsum dolor sit amet carrot cake cookie croissant. Sesame snaps donut wafer. Croissant lemon drops bonbon gummies cupcake candy canes caramels caramels. Cake donut jelly-o ice cream.
+									</p>
+									<ul class="modalLinks">
+										<li><a href="http://loremipsum.com/" target="_blank">loremipsum.com</a></li>
+										<li><a href="http://github.com/jaredphillips" target="_blank">github.com/jaredphillips</a></li>
+										<li><a href="https://twitter.com/lormipsum" target="_blank">@loremipsum</a></li>
+									</ul>
+								</div>
+							</div>
+					</div>	
+					<h4>Jared Phillips</h4>
+					<ul class="contactInfo">
+						<li>Lead, Student Experience</li>
+						<li><a href="http://loremipsum.com/" target="_blank">loremipsum.com</a></li>
+						<li><a href="http://github.com/jaredphillips" target="_blank">github.com/jaredphillips</a></li>
+						<li><a href="https://twitter.com/lormipsum" target="_blank">@loremipsum</a></li>
+					</ul>
+				</div> <!-- teamMemberThird -->
+				<div class="teamMemberThird">
+					<img src="images/team-member.jpg" alt="Jared Phillips">
+					<h4>Jared Phillips</h4>
+					<ul class="contactInfo">
+						<li>Lead, Student Experience</li>
+						<li><a href="http://loremipsum.com/" target="_blank">loremipsum.com</a></li>
+						<li><a href="http://github.com/jaredphillips" target="_blank">github.com/jaredphillips</a></li>
+						<li><a href="https://twitter.com/lormipsum" target="_blank">@loremipsum</a></li>
+					</ul>
+				</div> <!-- teamMemberThird -->
+				<div class="teamMemberThird">
+					<img src="images/team-member.jpg" alt="Jared Phillips">
+					<h4>Jared Phillips</h4>
+					<ul class="contactInfo">
+						<li>Lead, Student Experience</li>
+						<li><a href="http://loremipsum.com/" target="_blank">loremipsum.com</a></li>
+						<li><a href="http://github.com/jaredphillips" target="_blank">github.com/jaredphillips</a></li>
+						<li><a href="https://twitter.com/lormipsum" target="_blank">@loremipsum</a></li>
+					</ul>
+				</div> <!-- teamMemberThird -->
+			</div> <!-- teamContent -->
+			<div class="checklist">
+				<h2>Is your project a good fit for us?</h2>
+				<ol>
+					<li><p class="listSpecial">Do you need a website?</p></li>
+					<li><p class="listSpecial">Is your budget between $1000 and $5000?</p></li>
+					<li><p class="listSpecial">Are you a nice person?</p></li>
+				</ol>
+				<p>If you’ve answered yes to all three questions, you should get in touch!</p>
+			</div> <!-- checklist -->
+			<div class="form">
+				<h2>Project Inquiry</h2>
+				<form action="sendEmail.php" method="post" class="journeyForm" autocomplete="off" name="journeyForm">
+					<label for="name">Name</label>
+					<input type="text" placeholder="Name" class="name">
+					<label for="email">Email</label>
+					<input type="email" placeholder="Email" class="email">
+					<label for="phone">Phone</label>
+					<input type="phone" placeholder="Phone" class="phone">
+					<label for="website">Current Site URL</label>
+					<input type="text" placeholder="Website" class="website">
+					<label for="describeProject">Describe your project (in little or lots of detail)</label>
+					<textarea name="describeProject" id="describeProject" cols="30" rows="10"></textarea>
+					<input type="submit">
+				</form>
+			</div> <!-- form -->
+		</div> <!-- content -->
+	
+		<div class="sidebar">
+			<div class="sidebarheader">
+			<div class="fixedDiv"><img src="images/logo-journeymade-icon.svg" alt="journeymade icon" class="logoicon"></div>
+				<h1>JourneyMade</h1>
+				<p class="whyCaption">Why JourneyMade?</p>
+			</div> <!-- sidebarheader -->
+			<div class="sidebarbox everyBudget">
+				<img class="icon" src="images/icon-knife.svg">
+				<h3>A team for every budget</h3>
+				<p>We specialize in web projects between $1000 and $5000, and can also take on smaller tasks at our standard rate of $50 an hour.</p>
+			</div> <!-- sidebarbox everyBudget -->
+			<div class="sidebarbox pairedProgramming">
+			<img class="icon" src="images/icon-pair.svg">
+				<h3>Paired Programming</h3>
+				<p>Two minds are better than one! We put two developers to work on every project or task. They learn more, and you get a better result.</p>
+			</div> <!-- sidebarbox pairedProgramming -->
+			<div class="sidebarbox expertsAvailable">
+			<img class="icon" src="images/icon-compass.svg">
+				<h3>Experts Available</h3>
+				<p>Brenna O’Brien, Christina Truong and Jared Phillips are available to assist with client projects anytime. It ensures your project is done right, the first time.</p>
+			</div> <!-- sidebarbox expertsAvailable -->
+			<div class="sidebarbox doneRight">
+			<img class="icon" src="images/icon-guide.svg">
+				<h3>Get your project done right</h3>
+				<p>Finding a great freelance web developer isn’t easy. And there are plenty of horror stories about projects gone wrong. At JourneyMade, you’re hiring a team of developers trained right, with the resources to make sure your project is a success.</p>
+			</div> <!-- sidebarbox doneRight -->
+			<div class="sidebarbox learnDIY">
+			<img class="icon" src="images/icon-fire.svg">
+				<h3>Want to learn to do it yourself? We do that, too.</h3>
+				<p>Would you rather learn how to code your project yourself? We’re happy to have our team members teach you. It’s $50 an hour.</p>
+			</div> <!-- sidebarbox learnDIY -->
+			<div class="sidebarbox clientEdu">
+				<h3>Client Education</h3>
+				<p class="smallerText">Note that, before we’ll accept you as a client, you may be required to attend a two-hour workshop (either in-person or online) on how websites work, what web developers do, and how your web project will come together. We’ll even get you writing some HTML & CSS!</p>
+			</div> <!-- sidebarbox clientEdu -->
+		</div> <!-- sidebar -->
+		<footer>
+			<div class="content">
+				<h2>Contact Us</h2>
+				<h3 class="special">info@journeymade.com</h3>
+				<h2 class="second">Visit JourneyMade</h2>
+				<h3 class="second">483 Queen Street West, 3rd Floor
+				<br>Toronto, Ontario M5V 2A9</h3>
+			</div> <!-- footer content -->
+			<div class="sidebar">
+				<img src="images/logo-hackeryou-2x.png" alt="hackerYou logo" class="hackerYouLogo">
+				<p>
+					Want to join us? Our developers are all graduates of HackerYou’s front-end immersive bootcamp. Learn more.</p>
+				<p class="smallerText">Dev by Christina Truong at JourneyMade
+				Design by Studio Function (HackerYou alumni)</p>	
+			</div> <!-- footer sidebar -->
+		</footer>
+	</div> <!-- wrapper -->
+</body>
+</html>

@@ -1,0 +1,555 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+$darkgrey : #231F20;
+
+$linkcolor : #00B480;
+
+$linkhover : #4F8510;
+
+$paragraphtext : #797B7E;
+
+$sidebarback : #E3E3E1;
+
+$formlabels : #B0B2B4;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ img {
+ 	max-width: 100%;
+ 
+
+ }
+
+ .clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+ body, html {
+ 	font-family: Helvetica, sans-serif;
+ 	font-size: 14px;
+ 	line-height: 18px;
+ 	font-weight: 300;
+ 	background: $sidebarback;
+ 	width: 100%
+ }
+
+ .wrapper {
+ 	width: 100%;
+	margin: 0 auto;
+ }
+
+ .nav a {
+ 	font-size: 1rem;
+ 	margin-right: 1.5%;
+ }
+
+ h1 {
+ 	background: url(../images/logo-journeymade.svg) top center no-repeat;
+ 	background-size:contain;
+	background-position:center;
+	width: 100%;
+	height: 12%;
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	left: 0;
+	top: 5%;
+ }
+
+/*////////////////CONTENT AREA SELECTORS////////////////////////*/
+
+ .content {
+ 	width: 66.66%;
+ 	float: left;
+ 	padding: 5% 12.5% 5% 5%;
+ 	background: white;	
+ }
+
+/*.teamContent{
+	padding-right: 5%;
+}*/
+
+ .teamMember {
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 2%
+}
+
+.teamMemberThird {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+}
+
+.teamMemberThird:last-child {
+	margin-right: 0;
+}
+
+
+/*////////////////TYPOGRAPHY SELECTORS////////////////////////*/
+
+h2, ol li{
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 3.2rem;
+	letter-spacing: -1px;
+	color: $darkgrey;
+	padding-right: 18%;
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: .75rem;
+	letter-spacing: -1px;
+	color: $darkgrey;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: .75rem;
+	letter-spacing: -1px;
+	color: $darkgrey;
+	margin-bottom: 0;
+}
+
+a {
+	color: $linkcolor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $linkhover;
+	text-decoration: none;
+}
+
+
+ul.contactInfo {
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	letter-spacing: -1px;
+	color: #231F20;
+	list-style: none;
+	padding: 0;
+}
+
+	ul.contactInfo li:first-child {
+		font-family: Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		letter-spacing: -1px;
+		color: #797B7E;
+	}
+
+	ul.contactInfo li a {
+		color:$darkgrey;
+		letter-spacing: 0;
+	}
+
+	ul.contactInfo li:hover a {
+		color:$linkhover;
+	}
+
+.teamMemberThird {
+	position: relative;
+
+	.readBio {
+		position: relative;
+	
+		a{
+			display: none;
+			color: black;
+			background: white;
+			opacity: 0.75;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			padding-top: 40%;
+			font-size: 24px;
+		}
+
+		&:hover a{
+			display: block;
+			cursor: pointer;
+		}
+	}
+}
+
+.teamMemberThird ul.contactInfo li a{
+	font-weight: 600;
+	font-size: .85rem;
+	color: $linkcolor;
+}
+
+
+.teamMemberThird ul.contactInfo li a:hover{
+	font-weight: 600;
+	font-size: .85rem;
+	color: $linkhover;
+}
+
+.teamMemberThird ul.contactInfo li:first-child {
+	font-weight: 600;
+	font-size: .85rem;
+	color: $paragraphtext;
+	letter-spacing: 0;
+}
+
+.smallerText {
+	font-size: .75rem;
+	color: #797B7E;
+	padding-right: 2.5%;
+}
+
+.topContent p {
+	font-size: 1rem;
+	line-height: 1.6rem;
+	color: #797B7E;
+	font-weight: 300;
+}
+
+
+
+.checklist {
+	padding-top: 2%;
+	float: left;
+	display: block;
+}
+
+.checklist h2 {
+	border-bottom: 1px solid $sidebarback;
+	padding-bottom: 4%;
+	margin-bottom: 0;
+}
+
+ol {
+	padding-left: 0;
+	text-indent: 0;
+	margin-top: 0;
+
+ li {
+	line-height: 3rem;
+	border-bottom: 1px solid $sidebarback;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	margin-top: 0;
+	list-style-position: inside;
+	}
+}
+
+
+.checklist p {
+	font-size: 1rem;
+	line-height: 1.6rem;
+	color: #797B7E;
+	font-weight: 300; 
+}
+
+p.listSpecial {
+	font-size: 1.5rem;
+	color: $darkgrey;
+	display: inline;
+	line-height: 2.5rem;
+}
+
+img.icon {
+	width: 10%;
+	padding: 0;
+	margin: 0;
+}
+
+/*////////////////Form SELECTORS////////////////////////*/
+.form {
+	padding-top: 5%;
+	margin-bottom: 0;
+	position: relative;
+	clear: both;
+
+	h2 {
+		line-height: 0;
+	}
+}
+
+input, label[for="describeProject"] {
+	border: none;
+	border-bottom: 1px solid $sidebarback;
+	width: 100%;
+	height: 2.25rem;
+	margin-top:2rem;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: $formlabels;
+	outline: none;
+
+	:hover, :focus {
+		color: $linkcolor;
+		border: 0;
+	}
+}
+
+input:focus::-webkit-input-placeholder {
+   color: $linkcolor;
+}
+input:focus::-moz-placeholder {  /* Firefox 19+ */
+   color: $linkcolor;  
+}
+
+input:focus:-ms-input-placeholder {  
+   color: $linkcolor;  
+}
+
+label {
+	display:none;
+}
+
+label[for="describeProject"] {
+	display: block;
+	border-bottom: none;
+}
+
+textarea {
+	width: 100%;
+	border: 1px solid $sidebarback;
+	outline: none;
+}
+
+input[type="submit"] {
+	width: 20%;
+	color: white;
+	background: $linkcolor;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+/*////////////////SIDEBAR AREA SELECTORS////////////////////////*/
+
+ .sidebar {
+ 	width: 33.33%;
+ 	float: left;
+ 	color: white;
+ 	margin: 0;
+ }
+
+ .fixedDiv {
+ 	width: 100%;
+ 	height: 100px;
+ 	background: $darkgrey;
+ 	opacity: 0.75;
+ 	display: none;
+    position: fixed;
+ }
+
+ img.logoicon {
+ 	position: absolute;
+	display: inline-block;
+	text-align: center;
+	width: 10%;
+	top: 18%;
+	left: 12%;
+ }
+
+ .sidebarheader {
+ 	background: url(../images/hero.jpeg);
+ 	// background-position: center;
+ 	background-size: cover;
+ 	height: 1000px;
+ 	position: relative;
+ }
+
+p.whyCaption {
+	position: absolute;
+	top: 93%;
+	left:5%;
+	font-size:1.15rem;
+	text-shadow: -1px -1px 7px rgba(150, 150, 150, 1);
+}
+
+.everyBudget {
+	background: #549F66;
+}
+
+.pairedProgramming {
+	background:#4F8510;
+}
+
+.expertsAvailable {
+	background:#80A94E;
+}
+
+.doneRight {
+	background:#4B8256;
+}
+
+.learnDIY {
+	background: #73AE80;
+}
+
+.sidebarbox {
+	padding: 5%;
+}
+
+.sidebar h3 {
+	color: white;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	margin-top: 3%;
+}
+
+.clientEdu h3{
+	color: $paragraphtext;
+}
+
+// FOOTER SELECTORS
+
+footer {
+	
+	.sidebar {
+		padding-left: 2%;
+		color: $paragraphtext;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding-right: 7%;	
+		
+		img.hackerYouLogo{
+			width: 25%;
+		}
+	}
+
+	.content{
+		
+		padding-top:2%;
+
+		h2, h3 {
+			margin: 0;
+		}
+
+		h3.special {
+			color: $linkcolor;
+			line-height: 3rem;
+		}
+
+		h2.second {
+			margin-top:4%;
+		}
+
+		h3.second{
+			line-height: 1.75rem;
+		}
+	}
+}
+
+// MODAL SELCTORS///////////////////////////////////////////
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+// .readBio .modalDialog:hover{
+// 	display:none;
+// }
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 60%;
+	position: relative;
+	margin: 10% auto;
+	padding: 0;
+	// border-radius: 10px;
+	background: #fff;
+	// background: -moz-linear-gradient(#fff, #999);
+	// background: -webkit-linear-gradient(#fff, #999);
+	// background: -o-linear-gradient(#fff, #999);
+
+	h2, h3, p {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	h3 {
+		line-height: 2rem;
+	}
+
+	p {
+		color:$formlabels;
+		line-height: 2rem; 
+	}
+}
+
+.modalDialog > div .close {
+	background: none;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 1px;
+	text-align: center;
+	top: -27px;
+	width: 24px;
+	text-decoration: none;
+	padding: 0;
+}
+
+.close:hover { 
+	background: #00d9ff; 
+}
+
+img.modalImage {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.teamMemberThird .readBio .modalDialog > div ul {
+	padding-bottom:5%;
+
+		li {
+			display:inline;
+
+			a{
+				display:inline;
+				color:$linkcolor;
+				letter-spacing: 0;
+				background:none;
+				font-size: 1rem;
+				font-weight: 700;
+				margin-right: 2%;
+				padding:0;
+				position: relative;
+			}	
+		}	
+}
+
+.teamMemberThird .readBio .modalDialog > div ul li a:hover{
+	color:$linkhover;
+}
